@@ -1,0 +1,56 @@
+.theaterinfo {
+  position: relative;
+  padding-top: 60px;
+  color: #696969;
+  &__background {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    background: linear-gradient(to top, #fff, transparent 100%);
+  }
+  &__blur {
+    background-image: url(https://www.cgv.vn/media/site/cache/1/980x415/b58515f018eb873dafa430b6f9ae0c1e/t/i/time-cgv-1_4.png);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 90px);
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+    filter: blur(8px);
+  }
+  &__container {
+    padding: 100px 200px;
+    h3 {
+      color: #696969;
+    }
+  }
+  &__content {
+    padding: 0 50px;
+  }
+  &__img {
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  button {
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    background: 0 0;
+    padding: 7px 25px;
+    transition: all 0.2s;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #fb4226;
+    border: none;
+    color: #fff;
+    &:hover {
+      background-color: #b42a14;
+    }
+  }
+}

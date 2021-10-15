@@ -1,0 +1,81 @@
+.movielist {
+  padding: 50px 0 !important;
+  &__img {
+    height: 90%;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffffff33 0%, #00000036 101%);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+    border-radius: 5px;
+  }
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  &__item {
+    cursor: pointer;
+    height: 350px;
+    &:hover .movielist__overlay,
+    &:hover .movielist__button {
+      opacity: 1;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(0, 0, 0, 1) 101%
+      );
+    }
+  }
+  .slick-list {
+    max-width: 940px;
+    margin: auto !important;
+  }
+  .slick-slider {
+    position: relative;
+    .slick-arrow {
+      &.slick-prev {
+        position: absolute;
+        left: 10%;
+        z-index: 9;
+        &::before {
+          content: '<';
+          font-size: 100px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+      &.slick-next {
+        position: absolute;
+        right: 10%;
+        &::before {
+          content: '>';
+          font-size: 100px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}
+.spinner {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}

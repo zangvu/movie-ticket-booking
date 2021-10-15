@@ -1,0 +1,1 @@
+export const SELECT_CINEMA = 'SELECT_CINEMA';

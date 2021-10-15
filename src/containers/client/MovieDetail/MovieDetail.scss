@@ -1,0 +1,94 @@
+.info {
+  padding: 120px 200px;
+  position: relative;
+  &__background {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    background: linear-gradient(to top, #fff, transparent 100%);
+  }
+  &__blur {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 90px);
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+    filter: blur(8px);
+  }
+  &__container {
+    h2 {
+      color: #333;
+      font-weight: 600;
+    }
+  }
+  &__poster {
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
+  &__detail {
+    color: #333;
+    padding: 0 50px;
+  }
+  &__button {
+    background-color: #00a300;
+    border: none;
+    margin-right: 10px;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    padding: 3px 10px;
+    filter: none;
+    &:hover {
+      filter: drop-shadow(10px 14px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+}
+.time {
+  height: 500px;
+  padding: 0 200px;
+  &__item {
+    opacity: 0.7;
+    padding: 20px;
+    img {
+      width: 50px;
+      margin-right: 10px;
+    }
+    span {
+      font-weight: 600;
+    }
+    &.active {
+      opacity: 1;
+    }
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+  &__cinema {
+    padding: 10px 0;
+    img {
+      width: 80%;
+    }
+  }
+  &__showtime {
+    font-size: 2rem;
+    margin-left: 15px;
+    color: green;
+  }
+  &__content {
+    span:first-child {
+      font-size: 1em;
+      font-weight: 700;
+    }
+    span:nth-child(3) {
+      font-size: 0.8em;
+      color: gray;
+    }
+  }
+}

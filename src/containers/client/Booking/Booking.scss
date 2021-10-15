@@ -1,0 +1,67 @@
+.booking {
+  position: relative;
+}
+.main {
+  text-align: center;
+  padding: 60px 480px 0 80px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  &__info {
+    display: flex;
+    img {
+      width: 60px;
+      margin-right: 10px;
+    }
+    p {
+      color: rgb(197, 197, 197);
+    }
+  }
+  &__screen {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+  }
+  &__bookingchair {
+    margin-top: 100px;
+    span {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-color: rgb(212, 212, 212);
+      margin: 5px;
+      border-radius: 2px;
+      cursor: pointer;
+      opacity: 0.6;
+    }
+    .vip {
+      background-color: rgb(255, 243, 137);
+    }
+    .selected {
+      opacity: 1;
+      background-color: rgb(172, 172, 172);
+    }
+    .vip.selected {
+      background-color: rgb(218, 196, 0);
+    }
+    .sold {
+      background-color: rgb(255, 0, 0);
+    }
+  }
+}
+.bookinginfo {
+  position: fixed;
+  right: 0;
+  top: 60px;
+  width: 300px;
+  box-shadow: -18px 0px 26px 2px rgba(0, 0, 0, 0.19);
+  height: 100%;
+  padding: 20px 0 0 20px;
+  itemchair {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
